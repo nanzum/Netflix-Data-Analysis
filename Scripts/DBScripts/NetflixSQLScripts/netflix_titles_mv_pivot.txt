@@ -1,0 +1,247 @@
+INSERT INTO netflix_titles_mv
+
+SELECT
+`index`,
+`type`, 
+`title`, 
+`director`,
+`cast`,
+`date_added`,
+`release_year`,
+`rating`,
+`duration_min`,
+`duration_season`,
+`listed_in`,
+`description`,
+'genre0' as genre_pivot,			/*Creating Genre pivot*/
+genre0 as genre,
+'country0' as country_pivot,		/*Creating Country pivot*/
+country0 as country
+from netflix_titles
+
+UNION ALL
+SELECT
+`index`,
+`type`, 
+`title`, 
+`director`,
+`cast`,
+`date_added`,
+`release_year`,
+`rating`,
+`duration_min`,
+`duration_season`,
+`listed_in`,
+`description`,
+'genre1' as genre_pivot,			/*Creating Genre pivot*/
+genre1 as genre,
+'country1' as country_pivot,		/*Creating Country pivot*/
+country1 as country
+FROM netflix_titles
+
+
+UNION ALL
+SELECT
+`index`,
+`type`, 
+`title`, 
+`director`,
+`cast`,
+`date_added`,
+`release_year`,
+`rating`,
+`duration_min`,
+`duration_season`,
+`listed_in`,
+`description`,
+'genre2' as genre_pivot,			/*Creating Genre pivot*/
+genre2 as genre,
+'country2' as country_pivot,		/*Creating Country pivot*/
+country2 as country
+FROM netflix_titles
+
+UNION ALL
+SELECT
+`index`,
+`type`, 
+`title`, 
+`director`,
+`cast`,
+`date_added`,
+`release_year`,
+`rating`,
+`duration_min`,
+`duration_season`,
+`listed_in`,
+`description`,
+NULL as genre_pivot,			/*Creating Genre pivot*/
+NULL as genre,
+'country3' as country_pivot,		/*Creating Country pivot*/
+country3 as country
+FROM netflix_titles
+
+UNION ALL
+SELECT
+`index`,
+`type`, 
+`title`, 
+`director`,
+`cast`,
+`date_added`,
+`release_year`,
+`rating`,
+`duration_min`,
+`duration_season`,
+`listed_in`,
+`description`,
+NULL as  genre_pivot,			/*Creating Genre pivot*/
+NULL as  genre,
+'country4' as country_pivot,		/*Creating Country pivot*/
+country4 as country
+FROM netflix_titles
+
+UNION ALL
+SELECT
+`index`,
+`type`, 
+`title`, 
+`director`,
+`cast`,
+`date_added`,
+`release_year`,
+`rating`,
+`duration_min`,
+`duration_season`,
+`listed_in`,
+`description`,
+NULL as  genre_pivot,			/*Creating Genre pivot*/
+NULL as  genre,
+'country5' as country_pivot,		/*Creating Country pivot*/
+country5 as country
+FROM netflix_titles
+
+
+UNION ALL
+SELECT
+`index`,
+`type`, 
+`title`, 
+`director`,
+`cast`,
+`date_added`,
+`release_year`,
+`rating`,
+`duration_min`,
+`duration_season`,
+`listed_in`,
+`description`,
+NULL as  genre_pivot,			/*Creating Genre pivot*/
+NULL as  genre,
+'country6' as country_pivot,		/*Creating Country pivot*/
+country6 as country
+FROM netflix_titles
+
+
+UNION ALL
+SELECT
+`index`,
+`type`, 
+`title`, 
+`director`,
+`cast`,
+`date_added`,
+`release_year`,
+`rating`,
+`duration_min`,
+`duration_season`,
+`listed_in`,
+`description`,
+NULL as  genre_pivot,			/*Creating Genre pivot*/
+NULL as  genre,
+'country7' as country_pivot,		/*Creating Country pivot*/
+country7 as country
+FROM netflix_titles
+
+
+UNION ALL
+SELECT
+`index`,
+`type`, 
+`title`, 
+`director`,
+`cast`,
+`date_added`,
+`release_year`,
+`rating`,
+`duration_min`,
+`duration_season`,
+`listed_in`,
+`description`,
+NULL as  genre_pivot,			/*Creating Genre pivot*/
+NULL as  genre,
+'country8' as country_pivot,		/*Creating Country pivot*/
+country8 as country
+FROM netflix_titles
+
+
+UNION ALL
+SELECT
+`index`,
+`type`, 
+`title`, 
+`director`,
+`cast`,
+`date_added`,
+`release_year`,
+`rating`,
+`duration_min`,
+`duration_season`,
+`listed_in`,
+`description`,
+NULL as  genre_pivot,			/*Creating Genre pivot*/
+NULL as  genre,
+'country9' as country_pivot,		/*Creating Country pivot*/
+country9 as country
+FROM netflix_titles
+
+
+UNION ALL
+SELECT
+`index`,
+`type`, 
+`title`, 
+`director`,
+`cast`,
+`date_added`,
+`release_year`,
+`rating`,
+`duration_min`,
+`duration_season`,
+`listed_in`,
+`description`,
+NULL as  genre_pivot,			/*Creating Genre pivot*/
+NULL as  genre,
+'country10' as country_pivot,		/*Creating Country pivot*/
+country10 as country
+FROM netflix_titles
+
+
+UNION ALL
+SELECT
+`index`,
+`type`, 
+`title`, 
+`director`,
+`cast`,
+`date_added`,
+`release_year`,
+`rating`,
+`duration_min`,
+`duration_season`,
+`listed_in`,
+`description`,
+NULL as  genre_pivot,			/*Creating Genre pivot*/
+NULL as  genre,
+'country11' as country_pivot,		/*Creating Country pivot*/
+country11 as country
+FROM netflix_titles

@@ -1,0 +1,18 @@
+CREATE TABLE `netflix_titles_mv` (
+  `index` bigint DEFAULT NULL,
+  `type` text,
+  `title` text,
+  `director` text,
+  `cast` text,
+  `date_added` datetime DEFAULT NULL,
+  `release_year` bigint DEFAULT NULL,
+  `rating` text,
+  `duration_min` int DEFAULT NULL,
+  `duration_season` int DEFAULT NULL,
+  `listed_in` text,
+  `description` text,
+  `genre_pivot` text,
+  `genre` text,
+  `country_pivot` text,
+  `country` text
+)
